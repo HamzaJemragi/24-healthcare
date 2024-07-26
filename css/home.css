@@ -1,0 +1,521 @@
+@import url(http://fonts.googleapis.com/css?family=Merriweather:300,400,700,800,900);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,600,700);
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    border-bottom: 3px solid;
+    border-image: linear-gradient(to right, #f27c66, #f9cb8f, #18bb7c) 1;
+}
+
+header div {
+    background-color: rgb(38, 37, 37);
+    color: #fff;
+    height: 35px;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+}
+
+header div ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header div ul li {
+    margin: 5px;
+}
+
+header div ul li img {
+    margin-left: 10px;
+	margin-right: 10px;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border-radius: 3px;
+	background-color: #f27c66;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 10px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90px;
+}
+
+header nav h3 {
+    font-size: 40px;
+    color: #000;
+}
+
+header nav ul li #a {
+    text-decoration: none;
+    color: #000;
+    position: relative;
+    font-family: 'Merriweather', sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+}
+
+header nav ul li #a::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #f27c66;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+
+header nav ul li #a:hover::after {
+    width: 100%;
+}
+
+header nav ul li #login {
+    text-decoration: none;
+    padding: 10px;
+    width: 150px;
+    border-radius: 5px 0px;
+    border: none;
+    background-color: #f27c66;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+header nav ul li input:hover {
+    background-color: #f9cb8f;
+}
+
+article #founder {
+    text-align: center;
+    margin: 20px;
+    margin-top: 0px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+article #founder img {
+    width: 25%;
+    height: 25%;
+    border-radius: 50%;
+    border: 2px solid #f27c66;
+    margin: 100px;
+    margin-top: 150px;
+}
+
+article #founder h1 {
+    font-size: 40px;
+    font-family: 'Merriweather', sans-serif;
+    letter-spacing: 0.5px;
+    color: #f27c66;
+    margin: 0px;
+    margin-bottom: 5%;
+}
+
+article #founder p {
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 0.5px;
+    text-align: justify;
+    margin: 20px;
+    margin-bottom: 3%;
+    line-height: 1.5;
+}
+
+article #founder p span {
+    color: #6aa2de;
+    font-weight: 900;
+    font-size: 25px;
+    letter-spacing: 1.5px;
+    font-family: 'Merriweather', sans-serif;
+}
+
+article #services #h1 {
+    font-size: 150px;
+    font-family: 'Merriweather', sans-serif;
+    text-align: center;
+    letter-spacing: 0.5px;
+    color: #e5e5e5;
+    margin: 20px;
+    margin-bottom: 4%;
+    background-color: #f27c66;
+}
+
+article #services #cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0px;
+    margin: 15px;
+    margin-bottom: 70px;
+}
+
+article #services #cards #card {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    text-align: start;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 10px;
+    display: flex;
+    align-items: start;
+    justify-content: left;
+    flex-wrap:wrap;
+    width: 490px;
+    margin: 5px;
+    margin-top: 10px;
+}
+
+article #services #cards #card:hover {
+    /* transform: scale(1.05); */
+    transition: 1s;
+    background-color: #f27c66;
+}
+
+article #services #cards #card div {
+    display: flex;
+    align-items: start;
+    flex-wrap: nowrap;
+}
+
+article #services #cards #card div img {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+}
+
+article #services #cards #card div h3 {
+    color: #f27c66;
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+}
+
+article #services #cards #card:hover div h3 {
+    color: #fff;
+}
+
+article #services #cards #card div ul {
+    list-style-image: url('../images/check-mark.png');
+}
+
+article #services #cards #card div ul li {
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1.5px;
+    margin: 10px;
+}
+
+article #specialites #h1 {
+    font-size: 150px;
+    font-family: 'Merriweather', sans-serif;
+    text-align: center;
+    letter-spacing: 0.5px;
+    color: #e5e5e5;
+    margin: 20px;
+    margin-bottom: 4%;
+    background-color: #6aa2de;
+}
+
+article #specialites #cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin: 20px;
+    margin-bottom: 70px;
+}
+
+article #specialites #cards #card {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    text-align: start;
+    border-radius: 10px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap;
+    width: 490px;
+    margin: 5px;
+    margin-top: 10px;
+}
+
+/* article #specialites #cards #card:hover {
+    transform: scale(1.05);
+    transition: 1s;
+    background-color: #6aa2de;
+} */
+
+article #specialites #cards #card div {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+article #specialites #cards #card div img {
+    width: 490px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+article #specialites #cards #card #context {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+article #specialites #cards #card div h3 {
+    color: #6aa2de;
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    margin: 0px 0px 20px 0px;
+}
+
+article #specialites #cards #card div a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1.5px;
+    background-color: #6aa2de;
+    height: 50px;
+    width: 120px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+article #docteurs #h1 {
+    font-size: 150px;
+    font-family: 'Merriweather', sans-serif;
+    text-align: center;
+    letter-spacing: 0.5px;
+    color: #e5e5e5;
+    margin: 20px;
+    margin-bottom: 4%;
+    background-color: #18bb7c;
+}
+
+article #docteurs #cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin: 20px;
+    margin-bottom: 70px;
+}
+
+article #docteurs #cards #card {
+    text-align: start;
+    border: 5px solid #18bb7c;
+    border-radius: 10px;
+    background-color: #18bb7c;
+    width: 360px;
+    margin: 5px;
+    margin-top: 10px;
+}
+
+article #docteurs #cards #card:hover {
+    transform: scale(1.05);
+    transition: 1s;
+    background-color: #fff;
+}
+
+article #docteurs #cards #card div {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+article #docteurs #cards #card div img {
+    width: 360px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+article #docteurs #cards #card:hover div img {
+    transition: 1s;
+}
+
+
+article #docteurs #cards #card #context {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+article #docteurs #cards #card div h3 {
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+    margin: 0px 0px 20px 0px;
+}
+
+article #docteurs #cards #card:hover div h3 {
+    color: #18bb7c;
+    transition: 1s;
+}
+
+
+article #docteurs #cards #card div p {
+    color: #000;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    margin: 0px 0px 20px 0px;
+}
+
+section {
+  left: 0;
+  bottom: 12px;
+  width: 100%;
+  background: #373535;
+  padding-top: 60px;
+}
+
+footer {
+  position: relative;
+  margin: 0 30px;
+  color: rgb(255 255 255 / 50%);
+}
+
+footer.top {
+  display: grid;
+  border-bottom: 2px solid rgb(255 255 255 / 20%);
+  padding-bottom: 20px;
+}
+
+footer.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column-reverse;
+  gap: 8px;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer.top .links {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 60px;
+  margin-bottom: 30px;
+}
+
+.links-column {
+  display: grid;
+  gap: 10px;
+  text-align: center;
+}
+
+footer h2 {
+  margin: 0 0 10px;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: rgb(255 255 255 / 96%);
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer ul img {
+  width: 24px;
+  height: 24px;
+}
+
+footer p {
+  margin: 0;
+}
+
+.legal > a {
+  margin: 0 0 0 4px;
+}
+
+.legal,
+.copyright {
+  font-size: 12px;
+}
+
+.legal > span {
+  margin-right: 10px;
+}
+
+footer.top .socials {
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  translate: -50% 0;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  height: 56px;
+}
+
+footer.top .socials > i {
+  font-size: 24px;
+}
+
+.socials-column :is(h2, p) {
+  display: none;
+}
+
+@media (width > 400px) {
+  .links-column {
+    text-align: left;
+  }
+
+  footer.top .links {
+    grid-template-columns: repeat(2, 1fr);
+    margin-right: 50px;
+  }
+
+  footer.bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 20px;
+    text-align: left;
+  }
+
+  footer.top .socials {
+    left: 0;
+    translate: 0;
+  }
+}
+
+@media (width >= 640px) {
+  footer {
+    margin: 0 auto;
+    max-width: 580px;
+    padding: 0;
+  }
+
+  footer.top .links {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  footer.top .socials {
+    position: static;
+  }
+
+  footer.bottom {
+    justify-content: flex-start;
+  }
+
+  .socials-column :is(h2, p) {
+    display: block;
+  }
+}
